@@ -26,9 +26,11 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-/* .ghost{
-
-} */
+.ghost{
+  border:10px solid rgb(16, 216, 123);
+  border-radius:10px;
+  position:absolute;
+}
 
 
 /* //twiddler ex;

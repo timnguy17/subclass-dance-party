@@ -2,7 +2,9 @@ var makeGhostDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-
+  this.$node = $('<span class="ghost"></span>');
+  this.timeBetweenSteps = timeBetweenSteps;
+  this.setPosition(top, left);
 };
 
 
