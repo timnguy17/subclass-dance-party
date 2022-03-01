@@ -1,22 +1,24 @@
-var makeGhostDancer = function(top, left, timeBetweenSteps) {
+var makeSpinDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node = $('<img src="https://img.icons8.com/emoji/452/ghost-emoji.png" class="bounce resize">');
+  // this.$node = $('<span class="rotated"></span>');
+  this.$node = $('<img src="http://compsci.ca/v3/uploads/attachments/ddrarrow_116.gif" class="newRotate resize">');
+
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
 };
 
 
 
-makeGhostDancer.prototype = Object.create(makeDancer.prototype);
+makeSpinDancer.prototype = Object.create(makeDancer.prototype);
 
-makeGhostDancer.prototype.constructor = makeGhostDancer;
+makeSpinDancer.prototype.constructor = makeSpinDancer;
 
 
 //methods
 
-makeGhostDancer.prototype.step = function() {
+makeSpinDancer.prototype.step = function() {
 
   makeDancer.prototype.step.call(this);
 

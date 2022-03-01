@@ -2,6 +2,10 @@ body, html{
   height:100%;
 }
 body{
+  background-image: url(https://img.freepik.com/free-vector/nightclub-with-bar-counter-tables-dj-console-dance-floor-illuminated-by-disco-ball-spotlights-vector-cartoon-interior-night-party-dance-club-with-glowing-scene-neon-lamps_107791-4207.jpg?w=2000);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -9,7 +13,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .addGhostDancerButton {
+.title, .addDancerButton, .addGhostDancerButton, .addSpinDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -32,15 +36,39 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-
-/* //twiddler ex;
-button {
-  margin: 10px 10px 0px 220px;
-  background-image: url(https://media.istockphoto.com/vectors/tennis-ball-icon-vector-id1065086390?k=20&m=1065086390&s=612x612&w=0&h=K5rQyevGoni3DLkDCitnkTvdYS8GBfAEj6USosXHO6E=);
-  background-size: 150px;
-  background-position: center;
-  width: 90px;
+.resize {
+  width: 80px;
   height: 80px;
-  border-radius: 40px;
-  float: left;
-} */
+}
+
+
+.bounce {
+  position:relative;
+  animation: bounce 0.9s infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+
+.newRotate {
+  position:absolute;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+

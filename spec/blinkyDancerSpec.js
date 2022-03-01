@@ -31,4 +31,18 @@ describe('blinkyDancer', function() {
       expect(blinkyDancer.step.callCount).to.be.equal(2);
     });
   });
+
+});
+
+describe('ghostDancer', function() {
+  var ghostDancer;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    ghostDancer = new makeGhostDancer(10, 20, timeBetweenSteps);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(ghostDancer.$node).to.be.an.instanceof(jQuery);
+  });
 });
