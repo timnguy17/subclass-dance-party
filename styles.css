@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addGhostDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -25,3 +25,20 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+/* .ghost{
+
+} */
+
+
+/* //twiddler ex;
+button {
+  margin: 10px 10px 0px 220px;
+  background-image: url(https://media.istockphoto.com/vectors/tennis-ball-icon-vector-id1065086390?k=20&m=1065086390&s=612x612&w=0&h=K5rQyevGoni3DLkDCitnkTvdYS8GBfAEj6USosXHO6E=);
+  background-size: 150px;
+  background-position: center;
+  width: 90px;
+  height: 80px;
+  border-radius: 40px;
+  float: left;
+} */
