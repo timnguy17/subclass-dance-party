@@ -35,7 +35,9 @@ describe('blinkyDancer', function() {
 });
 
 describe('ghostDancer', function() {
-  var ghostDancer;
+
+  var ghostDancer, clock;
+  var timeBetweenSteps = 100;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
