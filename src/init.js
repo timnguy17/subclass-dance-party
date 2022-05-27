@@ -69,13 +69,16 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
+
+
   $('.lineup').on('click', function(event) {
-    var top = $('body').height() / 2;
+
+    var top = 50;
     var left = 50;
     // loop through window.dancers
     for ( var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].lineUp(top, left);
-      left += 100;
+      window.dancers[i].lineUp();
+
     }
     // change 'height' value
   });

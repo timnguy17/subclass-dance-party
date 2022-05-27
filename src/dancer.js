@@ -6,13 +6,15 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   // use jQuery to create an HTML <span> tag
   //6. we are creating a jquery obj & assigning it to $node.
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/96/man-dancing_1f57a.png" class="dancer">');
 
   //7. invoking step method
   this.step();
 
   //9. invoke set position
   this.setPosition(top, left);
+
+
 
 };
 
@@ -48,3 +50,7 @@ makeDancer.prototype.setPosition = function(top, left) {
 // makeDancer.prototype.setPosition(top, left);
 
 // return dancer;
+
+makeDancer.prototype.lineUp = function() {
+  this.$node.css({left: 0});
+};
